@@ -1,3 +1,10 @@
+server/saves/*
+server/lastSave.zip
+client/save.zip
+
+
+
+
 # Logs
 logs
 *.log
