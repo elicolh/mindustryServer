@@ -34,8 +34,11 @@ app.route('/save')
 
 app.get("/dl",(req,res)=>{
     console.log("req")
-    res.download(__dirname + "\\lastSave.zip")
-    // res.download(__dirname + "\\save.txt")
+    try{
+        res.download(__dirname + "\\lastSave.zip")
+    }catch{
+        console.log("erreur lors du download")
+    }
 })
 
 
